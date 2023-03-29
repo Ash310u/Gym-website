@@ -27,3 +27,5 @@ document.querySelector('ul').style.listStyle ='none';
 // li design--->
 
 document.querySelectorAll("span").forEach((element) => element.style.padding = '0px 30px');
+document.querySelectorAll("span").forEach((element) => element.style.padding = '0px 30px');
+document.querySelectorAll("span").forEach((element) => element.style.padding = '0px 30px');
