@@ -34,6 +34,24 @@ document.querySelectorAll("span").forEach((element) => element.style.fontWeight 
 document.getElementById('log').style.color ='#42BA96';
 document.getElementById('log').style.fontWeight ='200';
 
+// container2 design--->
+document.getElementById('container2').style.position = 'relative';
+
 // img design--->
 document.querySelector('img').style.width ='100%';
 document.querySelector('img').style.objectFit ='contain';
+
+// some design--->
+document.getElementById('some').style.position = 'absolute';
+document.getElementById('some').style.top = '60%';
+document.getElementById('some').style.left = '50%';
+document.getElementById('some').style.paddingRight = '100px';
+document.getElementById('some').querySelector('p').style.width = '500px';
+document.getElementById('some').querySelector('p').style.fontSize = '18px';
+document.getElementById('some').querySelector('button').style.border = 'none';
+document.getElementById('some').querySelector('button').style.borderRadius = '50px';
+document.getElementById('some').querySelector('button').style.padding = '10px 20px';
+document.getElementById('some').querySelector('button').style.color = '#414141';
+document.getElementById('some').querySelector('button').style.backgroundColor = 'rgba(255, 255, 255, 0.6)';
+document.getElementById('some').querySelector('button').style.fontSize = '18px';
+document.getElementById('some').querySelector('button').style.fontWeight = '600';
