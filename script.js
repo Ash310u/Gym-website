@@ -25,7 +25,5 @@ document.querySelector('ul').style.color ='#FFF8E7';
 document.querySelector('ul').style.listStyle ='none';
 
 // li design--->
-// document.querySelectorAll('li').style.padding = '0px 30px';
+
 document.querySelectorAll("span").forEach((element) => element.style.padding = '0px 30px');
-console.log("script orking");
-// document.getElementById("navbar").getElementsByTagName("li");
