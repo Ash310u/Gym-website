@@ -8,6 +8,7 @@ document.querySelector('*').style.boxSizing ='border-box';
 // body design--->
 document.body.style.margin ='0px';
 document.body.style.color ='#fff';
+document.body.style.fontFamily ='Poppins, sans-serif';
 
 // container design--->
 document.getElementById('container').style.backgroundColor = "#000000";
@@ -25,7 +26,14 @@ document.querySelector('ul').style.color ='#FFF8E7';
 document.querySelector('ul').style.listStyle ='none';
 
 // li design--->
-
 document.querySelectorAll("span").forEach((element) => element.style.padding = '0px 30px');
-// document.querySelectorAll("span").forEach((element) => element.style.padding = '0px 30px');
-// document.querySelectorAll("span").forEach((element) => element.style.padding = '0px 30px');
+document.querySelectorAll("span").forEach((element) => element.style.fontSize = '16px');
+document.querySelectorAll("span").forEach((element) => element.style.fontWeight = '400');
+
+// sign up log in design--->
+document.getElementById('log').style.color ='#42BA96';
+document.getElementById('log').style.fontWeight ='200';
+
+// img design--->
+document.querySelector('img').style.width ='100%';
+document.querySelector('img').style.objectFit ='contain';
