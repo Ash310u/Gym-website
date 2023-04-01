@@ -1,34 +1,65 @@
 // css things by DOM---------------------------------------------------------------->
 
 // * design--->
-document.querySelector('*').style.backgroundColor ='#414141';
-document.querySelector('*').style.margin ='0px';
-document.querySelector('*').style.boxSizing ='border-box';
+let allStyles = {
+    backgroundColor : '#414141',
+    margin: '0px',
+    boxSizing: 'border-box'
+};
+let allObj = document.querySelector('*'); 
+Object.assign(allObj.style, allStyles);
 
 // body design--->
-document.body.style.margin ='0px';
-document.body.style.color ='#fff';
-document.body.style.fontFamily ='Poppins, sans-serif';
+let bodyStyles ={
+    margin :'0px',
+    color :'#fff',
+    fontFamily :'Poppins, sans-serif'
+};
+let bodyObj = document.body;
+Object.assign(bodyObj.style, bodyStyles);
 
 // container design--->
-document.getElementById('container').style.backgroundColor = "#000000";
-document.getElementById('container').style.display ='flex';
-document.getElementById('container').style.flexDirection ='row';
-document.getElementById('container').style.justifyContent ='space-between';
-document.getElementById('container').style.alignItems ='center';
-document.getElementById('container').style.padding ='18px 100px';
+let containerStyles = {
+    backgroundColor: '#000000',
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: '18px 100px',
+    alignItems: 'center'
+};
+
+let containerObj = document.getElementById('container');
+Object.assign(containerObj.style, containerStyles);
+
+
 
 // ul design--->
-document.querySelector('ul').style.display ='flex';
-document.querySelector('ul').style.flexDirection ='row';
-document.querySelector('ul').style.justifyContent ='space-between';
-document.querySelector('ul').style.color ='#FFF8E7';
-document.querySelector('ul').style.listStyle ='none';
+let ulStyles = {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    color: '#FFF8E7',
+    listStyle: 'none'
+};
+ 
+let ulObj =  document.querySelector('ul');
+Object.assign(ulObj.style, ulStyles);
 
-// li design--->
-document.querySelectorAll("span").forEach((element) => element.style.padding = '0px 30px');
-document.querySelectorAll("span").forEach((element) => element.style.fontSize = '16px');
-document.querySelectorAll("span").forEach((element) => element.style.fontWeight = '400');
+
+// li span design--->
+let liStyles = {
+    padding: '0px 30px',
+    fontSize: '16px',
+    fontWeight: '#400',
+};
+ 
+let liObj =  document.getElementsByClassNames('span');
+Object.assign(liObj.style, liStyles);
+
+
+// document.querySelectorAll("span").forEach((element) => element.style.padding = '0px 30px');
+// document.querySelectorAll("span").forEach((element) => element.style.fontSize = '16px');
+// document.querySelectorAll("span").forEach((element) => element.style.fontWeight = '400');
 
 // sign up log in design--->
 document.getElementById('log').style.color ='#42BA96';
