@@ -64,27 +64,58 @@ document.querySelectorAll("span").forEach((element) => element.style.fontSize = 
 document.querySelectorAll("span").forEach((element) => element.style.fontWeight = '400');
 
 // sign up log in design--->
-document.getElementById('log').style.color = '#42BA96';
-document.getElementById('log').style.fontWeight = '200';
+let logStyles = {
+    color: '#42BA96',
+    fontWeight: '200',
+};
+
+let logObj = document.getElementById('log');
+Object.assign(logObj.style, logStyles);
 
 // container2 design--->
-document.getElementById('container2').style.position = 'relative';
+let container2Styles = {
+    position: 'relative',
+};
+
+let container2Obj = document.getElementById('container2');
+Object.assign(container2Obj.style, container2Styles);
 
 // img design--->
-document.querySelector('img').style.width = '100%';
-document.querySelector('img').style.objectFit = 'contain';
+let imageStyles = {
+    width: '100%',
+    objectFit: 'contain',
+};
+
+let imageObj = document.querySelector('img');
+Object.assign(imageObj.style, imageStyles);
 
 // some design--->
-document.getElementById('some').style.position = 'absolute';
-document.getElementById('some').style.top = '60%';
-document.getElementById('some').style.left = '50%';
-document.getElementById('some').style.paddingRight = '100px';
-document.getElementById('some').querySelector('p').style.width = '500px';
-document.getElementById('some').querySelector('p').style.fontSize = '18px';
-document.getElementById('some').querySelector('button').style.border = 'none';
-document.getElementById('some').querySelector('button').style.borderRadius = '50px';
-document.getElementById('some').querySelector('button').style.padding = '10px 20px';
-document.getElementById('some').querySelector('button').style.color = '#414141';
-document.getElementById('some').querySelector('button').style.backgroundColor = 'rgba(255, 255, 255, 0.6)';
-document.getElementById('some').querySelector('button').style.fontSize = '18px';
-document.getElementById('some').querySelector('button').style.fontWeight = '600';
+let someStyles = {
+    position: 'absolute',
+    top: '60%',
+    left: '50%',
+    paddingRight: '100px',
+};
+
+let somePStyles = {
+    width:'500px',
+    fontSize:'18px',
+}
+let someButtonStyles = {
+    border:'none',
+    borderRadius:'50px',
+    padding:'10px 20px',
+    color:'#414141',
+    backgroundColor:'rgba(255, 255, 255, 0.6)',
+    fontSize:'18px',
+    fontWeight:'600',
+}
+
+let someObj = document.getElementById('some');
+Object.assign(someObj.style, someStyles)
+
+let somePObj = document.getElementById('some').querySelector('p');
+Object.assign(somePObj.style, somePStyles)
+
+let someButtonObj = document.getElementById('some').querySelector('button');
+Object.assign(someButtonObj.style, someButtonStyles)
