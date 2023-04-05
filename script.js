@@ -48,20 +48,13 @@ Object.assign(ulObj.style, ulStyles);
 
 // li span design--->
 
-// let liStyles = {
-//     padding: '0px 30px',
-//     fontSize: '16px',
-//     fontWeight: '#400',
-// };
+let liStyles = {
+    padding: '0px 30px',
+    fontSize: '16px',
+    fontWeight: '#400',
+};
 
-// let liObj = document.querySelectorAll('.span');
-// let liObjElement = liObj.forEach(element => {return element;});
-// // console.log(element);
-// Object.assign(liObjElement.style, liStyles);
-
-document.querySelectorAll("span").forEach((element) => element.style.padding = '0px 30px');
-document.querySelectorAll("span").forEach((element) => element.style.fontSize = '16px');
-document.querySelectorAll("span").forEach((element) => element.style.fontWeight = '400');
+let liObjElement = document.querySelectorAll('.span').forEach(element => {return (Object.assign(element.style, liStyles))});
 
 // sign up log in design--->
 let logStyles = {
@@ -119,3 +112,20 @@ Object.assign(somePObj.style, somePStyles)
 
 let someButtonObj = document.getElementById('some').querySelector('button');
 Object.assign(someButtonObj.style, someButtonStyles)
+
+// container3 design--->
+
+let container3Styles = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+};
+
+let container3Obj = document.getElementById('container3');
+Object.assign(container3Obj.style, container3Styles);
+
+// // row design--->
+
+// let rowStyles = {
+// }
+// let rowObjElement  = document.querySelectorAll('.row').forEach(element => {return Object.assign(element.style, rowStyles);});
