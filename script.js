@@ -2,25 +2,27 @@
 
 // * design--->
 let allStyles = {
-    backgroundColor: '#414141',
+    backgroundColor: '#fff',
     margin: '0px',
     boxSizing: 'border-box'
 };
-let allObj = document.querySelector('*');
-Object.assign(allObj.style, allStyles);
+
+Object.assign(document.querySelector('*').style, allStyles);
 
 // body design--->
 let bodyStyles = {
     margin: '0px',
     color: '#fff',
-    fontFamily: 'Poppins, sans-serif'
+    fontFamily: 'Poppins, sans-serif',
+    height:'100vh',
+    overflow: 'hidden',
 };
-let bodyObj = document.body;
-Object.assign(bodyObj.style, bodyStyles);
+
+Object.assign(document.body.style, bodyStyles);
 
 // container design--->
 let containerStyles = {
-    backgroundColor: '#000000',
+    backgroundColor: '#000',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -28,8 +30,7 @@ let containerStyles = {
     alignItems: 'center'
 };
 
-let containerObj = document.getElementById('container');
-Object.assign(containerObj.style, containerStyles);
+Object.assign(document.getElementById('container').style, containerStyles);
 
 
 
@@ -42,8 +43,7 @@ let ulStyles = {
     listStyle: 'none'
 };
 
-let ulObj = document.querySelector('ul');
-Object.assign(ulObj.style, ulStyles);
+Object.assign(document.querySelector('ul').style, ulStyles);
 
 
 // li span design--->
@@ -54,7 +54,7 @@ let liStyles = {
     fontWeight: '#400',
 };
 
-let liObjElement = document.querySelectorAll('.span').forEach(element => {return (Object.assign(element.style, liStyles))});
+document.querySelectorAll('.span').forEach(element => { return (Object.assign(element.style, liStyles)) });
 
 // sign up log in design--->
 let logStyles = {
@@ -62,16 +62,14 @@ let logStyles = {
     fontWeight: '200',
 };
 
-let logObj = document.getElementById('log');
-Object.assign(logObj.style, logStyles);
+Object.assign(document.getElementById('log').style, logStyles);
 
 // container2 design--->
 let container2Styles = {
     position: 'relative',
 };
 
-let container2Obj = document.getElementById('container2');
-Object.assign(container2Obj.style, container2Styles);
+Object.assign(document.getElementById('container2').style, container2Styles);
 
 // img design--->
 let imageStyles = {
@@ -79,8 +77,7 @@ let imageStyles = {
     objectFit: 'contain',
 };
 
-let imageObj = document.querySelector('img');
-Object.assign(imageObj.style, imageStyles);
+Object.assign(document.querySelector('img').style, imageStyles);
 
 // some design--->
 let someStyles = {
@@ -91,41 +88,21 @@ let someStyles = {
 };
 
 let somePStyles = {
-    width:'500px',
-    fontSize:'18px',
+    width: '500px',
+    fontSize: '18px',
 }
 let someButtonStyles = {
-    border:'none',
-    borderRadius:'50px',
-    padding:'10px 20px',
-    color:'#414141',
-    backgroundColor:'rgba(255, 255, 255, 0.6)',
-    fontSize:'18px',
-    fontWeight:'600',
+    border: 'none',
+    borderRadius: '50px',
+    padding: '10px 20px',
+    color: '#414141',
+    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    fontSize: '18px',
+    fontWeight: '600',
 }
 
-let someObj = document.getElementById('some');
-Object.assign(someObj.style, someStyles)
+Object.assign(document.getElementById('some').style, someStyles)
 
-let somePObj = document.getElementById('some').querySelector('p');
-Object.assign(somePObj.style, somePStyles)
+Object.assign(document.getElementById('some').querySelector('p').style, somePStyles)
 
-let someButtonObj = document.getElementById('some').querySelector('button');
-Object.assign(someButtonObj.style, someButtonStyles)
-
-// container3 design--->
-
-let container3Styles = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-};
-
-let container3Obj = document.getElementById('container3');
-Object.assign(container3Obj.style, container3Styles);
-
-// // row design--->
-
-// let rowStyles = {
-// }
-// let rowObjElement  = document.querySelectorAll('.row').forEach(element => {return Object.assign(element.style, rowStyles);});
+Object.assign(document.getElementById('some').querySelector('button').style, someButtonStyles)
