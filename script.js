@@ -51,7 +51,7 @@ Object.assign(document.querySelector('ul').style, ulStyles);
 let liStyles = {
     padding: '0px 30px',
     fontSize: '16px',
-    fontWeight: '#400',
+    fontWeight: '400',
 };
 
 document.querySelectorAll('.span').forEach(element => { return (Object.assign(element.style, liStyles)) });
