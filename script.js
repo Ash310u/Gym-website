@@ -52,9 +52,21 @@ let liStyles = {
     padding: '0px 30px',
     fontSize: '16px',
     fontWeight: '400',
+    textDecoration: 'none',
 };
 
 document.querySelectorAll('.span').forEach(element => { return (Object.assign(element.style, liStyles)) });
+
+// All a tag designs--->
+
+let aStyles = {
+    cursor: 'default',
+    color: '#FFF8E7',
+    textDecoration: 'none',
+};
+
+document.querySelectorAll('a').forEach(element => { return (Object.assign(element.style, aStyles)) });
+document.getElementById('join').style.color = '#414141';
 
 // sign up log in design--->
 let logStyles = {
